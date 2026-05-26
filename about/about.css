@@ -1,0 +1,365 @@
+html{
+    font-family: "Noto Sans JP" , sans-serif;
+    font-size: 16px;
+    color: #262626;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    padding-top: 76px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.logo{
+    max-width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    opacity: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6vw;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #D9D9D9
+}
+
+.main-nav{
+    margin: 0 0 0 90px;
+    padding: 0;
+}
+
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.sub-nav{
+    display: none;
+}
+
+main{
+    margin: 0 29vw
+}
+
+h1{
+    margin: 8vh 0 6vh 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.slider-photo{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin:  0 0 3vh 0;
+}
+
+.photo{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.photo img{
+    width: 300px;        /* 1枚の幅を窓に合わせる */
+    height: 300px;
+    object-fit: cover;
+}
+
+.buttons{
+    width: 300px;
+    display: flex;
+    gap: 1.2vw;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.slider-button button:hover {
+    transform: scale(1.5);
+}
+
+.slider-button button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.slider-button button:disabled:hover{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.next-arrow::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(svg/right.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prev-arrow::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(svg/left.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Tsubasa{
+    margin: 30px 0 0 0;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 60px 0 0 0;
+}
+
+p{
+    margin: 5px 0 0 0;
+}
+
+.education{
+    width: 42vw;
+}
+
+.activity{
+    width: 42vw;
+}
+
+dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+dt{
+    width: 70px;
+}
+
+.education-item{
+    margin: 0;
+    width: calc(42vw - 70px);
+}
+
+.activity-item{
+    margin: 0;
+    width: calc(42vw - 70px);
+}
+
+.hobby{
+    width: 42vw;
+}
+
+.hobby img{
+    width: 20vw;
+    height: auto;
+    margin-top: 0.5vh;
+}
+
+.db{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+a{
+    text-decoration: none;
+    color: #262626;
+    transition: scale 0.1s ease-in-out;
+}
+
+a:hover{
+    scale: 1.2;
+}
+
+footer{
+    background-color: #D9D9D9;
+    margin: 29vh 0 0 0;
+    font-size: 1rem;
+    padding: 6vh 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.icon{
+    width: 4vw;
+    height: auto;
+}
+
+.navi2{
+    display: flex;
+    gap: 4vw;
+}
+
+.Insta{
+    width: 255px;
+}
+
+@media screen and (max-width: 700px) {
+    html{
+        font-size: 12px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .hamburger-btn{
+        display: block;
+        z-index: 1000;
+        width: 45px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .hamburger-btn span{
+        display: block;
+        width: 45px;
+        height: 1px;
+        background-color: #262626;
+        margin: 5px 0;
+    }
+
+    .sub-nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 274px;
+        background-color: #ffffff;
+        opacity: 90%;
+        transition: all 0.3s;
+        z-index: 999;
+        margin: 60px 0 0 0;
+    }
+
+    .sub-nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 10vw 10vw;
+        gap: 30px;
+    }
+
+    .sub-nav.active{
+        right: 0;
+    }
+
+    main{
+        margin: 0 15vw;
+    }
+
+    .slider-photo{
+        width: 70vw;
+        height: 70vw;
+        overflow: hidden;
+        position: relative;
+        margin:  0 0 3vh 0;
+    }
+
+    .photo{
+        display: flex;
+        width: 140vw;
+        height: 70vw;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .photo img{
+        width: 70vw;
+        height: 70vw;
+        object-fit: cover;
+    }
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        gap: 1.2vw;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slider-button button:hover {
+        transform: scale(1.0);
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .education, .activity, .hobby{
+        width: 100%;
+    }
+
+    .education-item, .activity-item{
+        width: calc(100% - 70px);
+    }
+
+    .hobby img{
+        width: 70vw;
+    }
+
+    a:hover{
+        scale: 1.0;
+    }
+    
+    .navi2{
+        gap: 5vh;
+    }
+
+    .icon{
+        width: 16vw;
+        height: auto;
+    }
+}

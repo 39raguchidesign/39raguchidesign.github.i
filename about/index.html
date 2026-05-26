@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you for watching my web portfolio!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="favicon" href="../favicon/favicon.jpg">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><a href="../index.html">Portfolio</a></div>
+        <nav class="sub-nav" id="sub-nav">
+            <ul>
+                <li><a href="../index.html">top</a></li>
+                <li><a href="../works/index.html">works</a></li>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="../contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">top</a></li>
+                <li><a href="../works/index.html">works</a></li>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="../contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <h1>about - 自己紹介</h1>
+        <div class="slider-container">
+            <div class="slider-photo">
+                <div class="photo" id="slider">
+                    <img src="photo/me_illust.jpg" alt="me_illust">
+                    <img src="photo/me_original.jpg" alt="me_original">
+                </div>
+            </div>
+            
+
+            <div class="buttons">
+                <div class="slider-button">
+                    <button onclick="slideNext()" id="next-btn" class="next-arrow"></button>
+                </div>
+    
+                <div class="slider-button">
+                    <button onclick="slidePrev()" id="prev-btn" class="prev-arrow"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="name">
+            <h1 class="Tsubasa">櫻口翼</h1>
+            <p>Tsubasa Sakuraguchi</p>
+            <p>2004/2/25</p>
+            <p>UI/UX・WEBデザイナー</p>
+        </div>
+
+        <div class="skills">
+            <h2>使えるツール</h2>
+            <p>Illustrator/Photoshop/After Effects/Premiere pro<br>Figma/VS Code/Fusion 360</p>
+        </div>
+
+        <div class="from">
+            <h2>出身</h2>
+            <p>生まれも育ちも北海道札幌市</p>
+        </div>
+
+        <div class="education">
+            <h2>沿革</h2>
+            <dl>
+                <dt>2022</dt>
+                <dd class="education-item">札幌市立大学デザイン学部 入学</dd>
+
+                <dt>2026</dt>
+                <dd class="education-item">札幌市立大学デザイン学部 卒業</dd>
+
+                <dt>2026</dt>
+                <dd class="education-item">株式会社インプロバイド 入社</dd>
+            </dl>
+        </div>
+
+        <div class="activity">
+            <h2>今までの活動</h2>
+            <dl>
+                <dt>2023</dt>
+                <dd class="activity-item">北海道学生ダンス連盟Spark主催舞台公演 Dream vol.14 デザイン班</dd>
+
+                <dt>2024</dt>
+                <dd class="activity-item">北海道学生ダンス連盟Spark主催舞台公演 Dream vol.15 デザイン班 統括</dd>
+
+                <dt>2025</dt>
+                <dd class="activity-item">北海道学生ダンス連盟Spark主催舞台公演 Dream vol.16 デザイン班 統括</dd>
+
+                <dt>2026</dt>
+                <dd class="activity-item">リーンローンチパッド北海道大会 特別賞</dd>
+            </dl>
+        </div>
+
+        <div class="hobby">
+            <h2>趣味</h2>
+            <div class="db">
+                <div class="dance">
+                    <p>ダンス</p>
+                    <img src="photo/breakdance.jpg" alt="breakdance">
+                </div>
+
+                <div class="beatbox">
+                    <p>ビートボックス</p>
+                    <img src="photo/beatbox.jpg" alt="beatbox">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="photo/mini icon.jpg" alt="icon" class="icon">
+        <div class="navi2">
+            <a href="../index.html">top</a>
+            <a href="../works/index.html">works</a>
+            <a href="./index.html">about</a>
+            <a href="../contact/index.html">contact</a>
+        </div>
+        <a href="https://www.instagram.com/39raguchi_design?igsh=c2o3N3J5YjhpZjYz&utm_source=qr" class="Insta">Instagram : @39raguchi_design</a>
+        <p>mail : 39raguchi.design@gmail.com</p>
+    </footer>
+
+    <script src="about.js"></script>    
+</body>
+</html>
