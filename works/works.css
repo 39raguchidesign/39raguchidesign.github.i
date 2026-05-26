@@ -72,7 +72,7 @@ h2{
 }
 
 .contents img{
-    width: calc((60vw - 30px) / 2);
+    width: calc((60vw - 46px) / 2);
     height: auto;
     margin-bottom: 1vh;
 }
